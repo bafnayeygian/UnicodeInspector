@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unicodeinspector"
+version = "1.0.0"
+description = "Inspect text for zero-width characters, bidirectional controls, unusual Unicode, and invisible formatting marks."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "UnicodeInspector contributors"}]
+
+[project.scripts]
+unicode-inspector = "unicode_inspector.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/bafnayeygian/UnicodeInspector"
+Issues = "https://github.com/bafnayeygian/UnicodeInspector/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
